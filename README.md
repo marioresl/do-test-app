@@ -161,13 +161,4 @@ doctl apps create --spec .do/app.yaml
 
 # App updaten
 doctl apps update <app-id> --spec .do/app.yaml
-
-# Manuelles Deployment triggern
-doctl apps create-deployment <app-id>
-
-# App Info
-doctl apps get <app-id>
-
-# App löschen
-doctl apps delete <app-id>
 ```
