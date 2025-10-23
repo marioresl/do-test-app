@@ -1,0 +1,11 @@
+name: react-test-app
+region: fra
+static_sites:
+  - build_command: npm run build
+    environment_slug: node-js
+    github:
+      branch: main
+      repo: marioresl/do-test-app
+      deploy_on_push: true
+    name: do-test-app
+    source_dir: /

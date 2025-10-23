@@ -17,7 +17,7 @@ function App() {
         </a>
       </div>
       <h1>Hello from DigitalOcean App Platform 🌊</h1>
-      <p>Deployed on 22.10.2025 10:45</p>
+      <p>Deployed on 23.10.2025 11:45</p>
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
