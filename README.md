@@ -95,8 +95,8 @@ static_sites:                  # Für statische Sites (React, Vue, etc.)
     name: do-test-app                  # Component Name
     source_dir: /                      # Root Directory
     envs:                              # Environment Variables
-      - key: VITE_FUNCTION_URL         # Variable Name
-        value: https://...             # Function URL
+      - key: VITE_FUNCTIONS_BASE_URL   # Variable Name  
+        value: https://faas-fra1-xxx.doserverless.co/api/v1/web/fn-xxx  # Nur Base URL!
         scope: BUILD_TIME              # Für Vite Build-Zeit Variablen!
 ```
 

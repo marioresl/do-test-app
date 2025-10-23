@@ -7,7 +7,9 @@ function App() {
   const [error, setError] = useState(null)
   const [name, setName] = useState('')
 
-  const FUNCTION_URL = import.meta.env.VITE_FUNCTION_URL
+  // Base URL für alle Functions - nur einmal konfigurieren!
+  const FUNCTIONS_BASE_URL = import.meta.env.VITE_FUNCTIONS_BASE_URL || 'https://faas-fra1-XXXXX.doserverless.co/api/v1/web/fn-XXXXX'
+  const FUNCTION_URL = `${FUNCTIONS_BASE_URL}/sample/hello`
 
   const callFunction = async () => {
     setLoading(true)
@@ -61,7 +63,7 @@ function App() {
           <div style={{ color: '#ff6b6b', marginTop: '1rem' }}>
             <strong>Error:</strong> {error}
             <br />
-            <small>Hast du die VITE_FUNCTION_URL gesetzt?</small>
+            <small>Hast du die VITE_FUNCTIONS_BASE_URL gesetzt?</small>
           </div>
         )}
 
