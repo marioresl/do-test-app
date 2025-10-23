@@ -10,9 +10,9 @@ static_sites:
     github:
       branch: main
       repo: marioresl/do-test-app
+      deploy_on_push: true
     name: do-test-app
     source_dir: /
-    auto_deploy: true
 ```
 
 ## Deployment
